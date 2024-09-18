@@ -5,3 +5,5 @@ function DebugPrint(text, encode, indent)
         print(text)
     end
 end
+
+exports("DebugPrint", DebugPrint)
