@@ -7,3 +7,10 @@ function DebugPrint(text, encode, indent)
 end
 
 exports("DebugPrint", DebugPrint)
+
+function Trim(text)
+    if not text then return nil end
+    return (string.gsub(text, '^%s*(.-)%s*$', '%1'))
+end
+
+exports("Trim", Trim)

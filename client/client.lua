@@ -26,3 +26,10 @@ function SpawnNPC(model, coords, heading, networked, args)
 end
 
 exports("SpawnNPC", SpawnNPC)
+
+function Trim(text)
+    if not text then return nil end
+    return (string.gsub(text, '^%s*(.-)%s*$', '%1'))
+end
+
+exports("Trim", Trim)
